@@ -136,12 +136,108 @@ class Portfolio {
                 children: ['En Proceso']
             },
             '/proyectos/proyectos-concluidos': {
-                type: 'file',
-                content: {
-                    title: 'Proyectos Finalizados',
-                    description: 'En proceso'
+    type: 'file',
+    content: {
+        title: 'Proyectos Finalizados',
+        description: `
+            <div class="proyectos-finalizados">
+                <h3>🚀 Proyectos Destacados</h3>
+                <ul>
+                    <li>
+                        <b>Práctica 2 </b>
+                        <span class="estado estado-acabado">Acabado</span><br>
+                        <span>Desarrollo en clase</span><br>
+                        <button class="github-btn" onclick="window.open('https://github.com/AlexSam-stack/Pr-cticaCalificada','_blank')">Ver en GitHub</button>
+                    </li>
+                    <li>
+                        <b>Practica 3/b>
+                        <span class="estado estado-acabado">Acabado</span><br>
+                        <span>Aplicación web desarrollada en clase.</span><br>
+                        <button class="github-btn" onclick="window.open('https://github.com/AlexSam-stack/PracticaCalificada2','_blank')">Ver en GitHub</button>
+                    </li>
+                    <li>
+                        <b>Sistema trámite documentario</b>
+                        <span class="estado estado-enproceso">En Proceso</span><br>
+                        <span>Aplicación web para la tesis</span><br>
+                        <button class="github-btn" onclick="window.open('https://github.com/AlexSam-stack/Prueba/tree/master','_blank')">Ver en GitHub</button>
+                    </li>
+                </ul>
+            </div>
+            <style>
+                .proyectos-finalizados {
+                    background: #f8fafc;
+                    border-radius: 10px;
+                    padding: 20px 18px;
+                    box-shadow: 0 2px 10px #1976d211;
+                    animation: fadeIn 1.2s;
                 }
-            },
+                .proyectos-finalizados h3 {
+                    color: #1976d2;
+                    margin-bottom: 14px;
+                    text-align: center;
+                }
+                .proyectos-finalizados ul {
+                    list-style: none;
+                    padding: 0;
+                    margin: 0;
+                }
+                .proyectos-finalizados li {
+                    margin-bottom: 18px;
+                    background: #fff;
+                    border-radius: 7px;
+                    padding: 12px 14px;
+                    box-shadow: 0 1px 4px #1976d211;
+                    transition: box-shadow 0.2s;
+                    position: relative;
+                }
+                .proyectos-finalizados li:hover {
+                    box-shadow: 0 4px 16px #1976d233;
+                }
+                .estado {
+                    display: inline-block;
+                    margin-left: 10px;
+                    padding: 2px 10px;
+                    border-radius: 12px;
+                    font-size: 0.95em;
+                    font-weight: 600;
+                    vertical-align: middle;
+                }
+                .estado-acabado {
+                    background: #e8f5e9;
+                    color: #388e3c;
+                    border: 1px solid #388e3c33;
+                }
+                .estado-enproceso {
+                    background: #fffde7;
+                    color: #fbc02d;
+                    border: 1px solid #fbc02d33;
+                }
+                .estado-poriniciar {
+                    background: #ffebee;
+                    color: #d32f2f;
+                    border: 1px solid #d32f2f33;
+                }
+                .github-btn {
+                    margin-top: 8px;
+                    background: linear-gradient(90deg, #1976d2 60%, #388e3c 100%);
+                    color: #fff;
+                    border: none;
+                    border-radius: 6px;
+                    padding: 7px 18px;
+                    font-size: 1em;
+                    font-weight: 500;
+                    cursor: pointer;
+                    transition: background 0.2s, box-shadow 0.2s;
+                    box-shadow: 0 1px 4px #1976d211;
+                }
+                .github-btn:hover {
+                    background: linear-gradient(90deg, #388e3c 60%, #1976d2 100%);
+                    box-shadow: 0 2px 8px #1976d233;
+                }
+            </style>
+        `
+    }
+},
             '/cuaderno': {
                 type: 'directory',
                 children: ['semana1', 'semana2', 'semana3','semana4', 'semana5', 'semana6', 'semana7']
