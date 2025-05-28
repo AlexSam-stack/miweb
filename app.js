@@ -61,7 +61,7 @@ class Portfolio {
                     description: `
                         <div class="sobre-mi-box">
                             <div class="foto-perfil">
-                                <img src="../fotos/alex.jpg" alt="Foto de Alex Samaniego" />
+                                <img src="alex.jpg" alt="Foto de Alex Samaniego" />
                             </div>
                             <div class="info-personal">
                                 <div class="nombre-sobre-mi">Alex Samaniego</div>
